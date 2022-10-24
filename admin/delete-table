@@ -1,0 +1,23 @@
+<?php
+    include('../config/constant.php');
+
+     $id=$_GET['id'];
+
+     echo $customer_email;
+
+    $sql="DELETE FROM `tbl_table` WHERE customer_email = '$id'";
+
+    $res= mysqli_query($conn, $sql);
+
+    if($res==true)
+    {
+        $_SESSION['delete']="table deleted";
+
+        header('location:'.SITEURL.'admin/manage-table.php');
+    }
+    else{
+        $_SESSION['delete']="failed.try again";
+
+        header('location:'.SITEURL.'admin/manage-table.php');
+    }
+?>
