@@ -3,7 +3,7 @@
 
 
     <!-- CAtegories Section Starts Here -->
-    <section class="categories">
+    <section class="categories" style="background-image:url(invo.png) ;">
         <div class="container">
             <h2 class="text-center">Explore Foods</h2>
 

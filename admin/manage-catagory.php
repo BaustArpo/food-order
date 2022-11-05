@@ -14,9 +14,8 @@
   padding: 15px;
   text-align: left;
   border-bottom: 1px solid red;
-}
-    .btn-success{
-        background-color: #2596be;
+}.btn-success{
+        background-color: #FFB845;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
@@ -101,10 +100,19 @@
     .red{
         color: red;
     }
+    .d-1{
+                border-radius: 25px;
+                border: 2px solid #73AD21;
+                padding: 20px;
+                width: 200px;
+                height: 150px;
+            }
 </style>
-<div class="main-content">
+<body style="background: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, 
+rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);" >
+<div class="main-content" style="background-image: url(adw3.png);">
     <div class="wrapper">
-        <h1>manage catagory</h1>
+        <h1 style="color: #c81912;">Manage Catagory</h1>
         <br>
         <?php 
 if(isset($_SESSION['add']))
@@ -120,8 +128,10 @@ if(isset($_SESSION['delete']))
 ?>
 <br>
 
-        <a class="btn-success" href="/food-oder/admin/add-catagory.php">Add catagory <br></a>
-        <table>
+       
+        <center>
+        <table class="d-1" style="background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%,
+         rgb(255, 194, 203) 96.2%);">
             <tr>
                 <th >S.n</th>
                 <th >title</th>
@@ -168,7 +178,7 @@ if(isset($_SESSION['delete']))
                 
                 <td >
                     
-                    <a class="btn-danger" href="<?php echo SITEURL; ?>admin/delete-catagory.php ? id=<?php echo $id; ?>">Delete catagory</a>
+                    <a class="btn-danger" href="<?php echo SITEURL; ?>admin/delete-catagory.php ? id=<?php echo $id; ?>">Delete</a>
 
                 </td>
             </tr>
@@ -188,7 +198,13 @@ if(isset($_SESSION['delete']))
 
           
         </table>
+        </center>
+        <center>
+        <a class="btn-success" href="/food-oder/admin/add-catagory.php">Add catagory <br></a>
+        </center>
     </div>
 
 
-</div>
+</div>    
+
+</body>

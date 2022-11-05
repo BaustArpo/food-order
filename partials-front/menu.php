@@ -12,7 +12,7 @@
 
 <body>
     <!-- Navbar Section Starts Here -->
-    <section class="navbar">
+    <section class="navbar" style="background: radial-gradient(905px at 4.9% 85.8%, rgb(255, 243, 242) 0.1%, rgb(255, 247, 220) 57.6%);">
         <div class="container">
             <div class="logo">
                 <a href="#" title="Logo">

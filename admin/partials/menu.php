@@ -17,9 +17,9 @@
                     <li><a href="/food-oder/admin/manage-admin.php">Admin</a></li>
                     <li><a href="/food-oder/admin/manage-catagory.php">Catagory</a></li>
                     <li><a href="/food-oder/admin/manage-food.php">Food</a></li>
-                    <li><a href="/food-oder/admin/avail_table.php">Available Tables</a></li>
+                   
 
-                    <li><a href="/food-oder/admin/manage-table.php">Tables</a></li>
+                    <li><a href="/food-oder/admin/manage-table.php">Booked Tables</a></li>
 
                     <li><a href="/food-oder/admin/manage-oder.php">order</a></li>
                     <li><a href="/food-oder/admin/logout.php">Logout</a></li>

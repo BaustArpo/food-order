@@ -1,7 +1,5 @@
 <?php include('partials/menu.php');?>
-<div class="main-content">
-    <div class="wrapper">
-    <style>
+<style>
     H1{
         text-align: center;
         font-weight: lighter;
@@ -103,19 +101,43 @@
     .red{
         color: red;
     }
+    .d-1{
+                border-radius: 25px;
+                border: 2px solid #73AD21;
+                padding: 20px;
+                width: 1000px;
+                height: 150px;
+            }
+     .main-content{
+        height: 100%;
+        width: 100%;
+    background-image: url("tables.jpg");
+     }  
+     .t-1{
+        font-weight: bold;
+       
+     }     
+ 
 </style>
-        <h1>manage table</h1>
+<div class="main-content">
+
+    <div class="wrapper">
+   
+        <h1 style="color:#422057FF ;" class="t-1">Manage Table</h1>
         <?php 
             if(isset($_SESSION['delete']))
             {
                 echo $_SESSION['delete'];
                 unset($_SESSION['delete']);
             }
+          
             
         
         ?>
         <br><br>
-        <table>
+        <center>
+        <table class="d-1" style="background: linear-gradient(111.5deg, rgb(228, 247, 255) 21.9%,
+         rgb(255, 216, 194) 92.2%);">
             <tr>
                 <th>sn</th>
                 <th>name</th>
@@ -171,6 +193,7 @@
             ?>
         
         </table>
+        </center>
     </div>
     
 

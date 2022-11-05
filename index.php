@@ -1,5 +1,31 @@
 <?php include('.\partials-front\menu.php'); ?>
     <!-- Navbar Section Ends Here -->
+    <style>
+       .categories{
+        background-image: url("cata.png");
+        background-size:100%;
+  width: 100%;
+  height: 100%; 
+       }
+       .food-menu{
+        background-image: url("menu.png");
+       }
+       .food-menu-box{
+        background: radial-gradient(circle at 10% 20%, rgb(166, 226, 229) 0%, rgb(198, 232, 221) 100.2%);
+       }
+       .food-menu-img{
+        width: 80%;
+       }
+       .men{
+        writing-mode: vertical-rl;
+        margin-right: 30px;
+        font-size: 100px;
+       }
+       .sec-m{
+        height: 400px;
+  width: 100%;
+       }
+    </style>
 
     <!-- fOOD search Section Starts Here -->
     <section class="food-search text-center">
@@ -85,15 +111,13 @@
 
 
     <!-- fOOD MEnu Section Starts Here -->
-    <style>
-        * {
-            margin: 0 0;
-            padding: 0 0;
-          }
-    </style>
+
     <section class="food-menu">
-        <div class="container">
-            <h2 class="text-center">Food Menu</h2>
+        <div class="container" >
+            <div class="sec-m" style="display: flex;">
+            <center>
+            <h2 class="men" style="color:#fdffcd ;">Food Menu</h2>
+            </center>
 
             <?php 
                 $sql2="SELECT * FROM tbl_food WHERE active='Yes' AND featured='Yes' LIMIT 6";
@@ -157,13 +181,12 @@
 
             <div class="clearfix"></div>
 
+            </div>
             
 
         </div>
 
-        <p class="text-center">
-            <a href="#">More Foods</a>
-        </p>
+        
     </section>
     <!-- fOOD Menu Section Ends Here -->
 </body>

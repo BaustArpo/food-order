@@ -7,10 +7,7 @@ if ($_GET) {
     echo "Url has no user";
 }
 ?>
-<div class="main-content">
-    <center>
-    <div class="wrapper">
-        <style>
+<style>
             H1 {
                 text-align: center;
                 font-weight: lighter;
@@ -64,11 +61,29 @@ if ($_GET) {
             .red {
                 color: red;
             }
-        </style>
-        <h1 style="color:#EA4C89">Your Order</h1>
+            .ad-1{
+        
+        border-radius: 50px;
+        width:420px;
+        height:325px ;
+        }
+
+        .invopic{
+            height: 300px;
+            width: 890px;
+            border-radius: 50px;
+        }
+
+</style>
+<div class="main-content" style="background-image: url(invo.png);" >
+    <center>
+    <div class="wrapper">
+        
+        <h1 style="color:#bbe4e9">Your Order</h1>
 
         <br><br>
-        <table>
+        <table class="ad-1" style="background: radial-gradient(circle at 18.7% 37.8%, 
+        rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);">
             <tr>
                 <th>sn</th>
                 <th>food</th>
@@ -115,7 +130,7 @@ if ($_GET) {
 
                         <td><?php echo $customer_address; ?></td>
                         <td>
-                            <a href="<?php echo SITEURL; ?>payment.php?email=<?php echo $customer_email;?>" class="btn-secondary">PAY NOW</a>
+                            <a href="<?php echo SITEURL; ?>payment.php?email=<?php echo $customer_email;?>" class="btn-secondary">PAY</a>
 
                         </td>
                     </tr>
@@ -131,13 +146,17 @@ if ($_GET) {
 
         </table>
     </div>
+
+    </center>
+    <br>
+
+    <center>
+        <div>
+            <img src="adw2.png" alt="" class="invopic">
+        </div>
     </center>
     
-<center>
-    <div>
-        <img src="./images/thanks.jpg" alt="" width="700px">
-    </div>
-</center>
+
 
 
 </div>

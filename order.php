@@ -133,7 +133,8 @@
 
                     if($res2){
                         $_SESSION['order']="Order Successful";
-                        header("location:http://localhost/food-oder/confirm-order.php?user=$customer_email");
+                        echo ("<script>location.href = 'confirm-order.php?user=$customer_email';</script>");
+                        //header("location:http://localhost/food-oder/confirm-order.php?user=$customer_email");
                     }else{
                         $_SESSION['order']="Order Unsuccessful";
                             header('location:'.SITEURL);

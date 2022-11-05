@@ -1,7 +1,5 @@
 <?php include('partials/menu.php');?>
-<div class="main-content">
-    <div class="wrapper">
-    <style>
+<style>
     H1{
         text-align: center;
         font-weight: lighter;
@@ -17,32 +15,7 @@
   text-align: left;
   border-bottom: 1px solid red;
 }
-    .btn-success{
-        background-color: #2596be;
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
-  color: green;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  height: 40px;
-  line-height: 20px;
-  list-style: none;
-  margin: 0;
-  outline: none;
-  padding: 10px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: color 100ms;
-  vertical-align: baseline;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-    }
+    
     .btn-secondary {
         background-color: #EA4C89;
   border-radius: 8px;
@@ -71,41 +44,35 @@
   align-self: right;
 
     }
-    .btn-danger{
-        background-color: #EA4C89;
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  height: 40px;
-  line-height: 20px;
-  list-style: none;
-  margin: 0;
-  outline: none;
-  padding: 10px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: color 100ms;
-  vertical-align: baseline;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-    }
-    .th-1{
+        .th-1{
         text-align: right;
     }
     .red{
         color: red;
     }
+    .main-content{
+        height: 100%;
+        width: 100%;
+    background-image: url("order.png");
+     }
+      .d-1{
+                border-radius: 25px;
+                border: 2px solid #73AD21;
+                padding: 20px;
+                width: 1000px;
+                height: 150px;
+            } 
+
+             .t-1{
+        font-weight: bold;
+       
+     } 
 </style>
+<div class="main-content">
+    <div class="wrapper">
+   
         
-        <h1 style="color: #EA4C89;">manage oders</h1>
+        <h1 style="color:#7c73e6 ;" class="t-1">Manage Orders</h1>
         <?php 
             if(isset($_SESSION['delete']))
             {
@@ -116,7 +83,8 @@
         
         ?>
         <br><br>
-        <table>
+        <table class="d-1" style="background: linear-gradient(111.5deg, rgb(228, 247, 255) 21.9%,
+         rgb(255, 216, 194) 92.2%);">
             <tr>
                 <th>sn</th>
                 <th>food</th>
